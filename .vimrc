@@ -23,7 +23,10 @@ map <F7> :Tlist<CR>
 let NERDTreeWinPos = "right"
 nmap <F8> :NERDTreeToggle<CR>
 
-nmap<F4> yiw:Rg <C-R>"<CR>
+" F4: 현재 단어 검색 (fzf-ripgrep)
+nnoremap <F4> :Rg <C-r><C-w><CR>
+" Ctrl+t: 이전 위치로 복귀 (점프 리스트 사용)
+nnoremap <C-t> <C-o>
 
 set nocompatible
 filetype off
